@@ -114,6 +114,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 1rem;
 }
 
 .change-theme {
@@ -1121,7 +1122,7 @@ nav {
     margin-right: 1rem;
   }
   .nav_menu {
-    padding: 2rem 0.25rem 6rem;
+    padding: 2rem 0.25rem 4rem;
   }
   .nav_list {
     -webkit-column-gap: 0;

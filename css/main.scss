@@ -115,6 +115,7 @@ img {
 .nav_btns {
   display: flex;
   align-items: center;
+  margin-right: 1rem;
 }
 .change-theme {
   font-size: 1.25rem;
@@ -1027,7 +1028,7 @@ nav {
   }
 
   .nav_menu {
-    padding: 2rem 0.25rem 6rem;
+    padding: 2rem 0.25rem 4rem;
   }
 
   .nav_list {
