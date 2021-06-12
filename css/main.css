@@ -217,6 +217,10 @@ nav {
   text-align: center;
 }
 
+.nav_logo {
+  margin-left: 1rem;
+}
+
 .nav_logo,
 .nav_toggle {
   color: var(--title-color);
