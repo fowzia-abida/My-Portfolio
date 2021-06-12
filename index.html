@@ -826,27 +826,32 @@
             </div>
           </div>
 
-          <form action="" class="contact_form grid">
+          <form
+            action=""
+            method="POST"
+            class="contact_form grid"
+            data-netlify="true"
+          >
             <div class="contact_inputs grid">
               <div class="contact_content">
                 <label for="" class="contact_label">Name</label>
-                <input type="text" class="contact_input" />
+                <input type="text" name="name" class="contact_input" />
               </div>
               <div class="contact_content">
                 <label for="" class="contact_label">Email</label>
-                <input type="email" class="contact_input" />
+                <input type="email" name="email" class="contact_input" />
               </div>
             </div>
 
-            <div class="contact_content">
+            <!-- <div class="contact_content">
               <label for="" class="contact_label">Project</label>
               <input type="text" class="contact_input" />
-            </div>
+            </div> -->
             <div class="contact_content">
               <label for="" class="contact_label">Message</label>
               <textarea
                 class="contact_input"
-                name=""
+                name="message"
                 id=""
                 cols="0"
                 rows="4"
@@ -854,10 +859,11 @@
             </div>
 
             <div>
-              <a href="#" class="btn btn--flex send-btn"
-                >Send Message
-                <i class="uil uil-message btn_icon"></i>
-              </a>
+              <input
+                type="submit"
+                value="Send Message"
+                class="btn btn--flex send-btn"
+              />
             </div>
           </form>
         </div>
