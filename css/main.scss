@@ -723,7 +723,7 @@ nav {
 
 .box {
   height: 90%;
-  background: #fff;
+  background: var(--body-color);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   display: flex;
