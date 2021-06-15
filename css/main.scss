@@ -414,6 +414,89 @@ nav {
   font-size: 1.25rem;
 }
 
+//-----------------------dot animation-------//
+
+.container-dot {
+  position: relative;
+  width: 20%;
+  left: 15rem;
+  top: 42em;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.one {
+  background-color: rgb(106, 198, 214);
+  animation: animate 2.5s linear infinite forwards;
+  animation-delay: 0.2;
+}
+.two {
+  background-color: aqua;
+  animation: animate 2.5s linear infinite forwards;
+  animation-delay: 0.2s;
+}
+.three {
+  background-color: rgb(15, 250, 250);
+  animation: animate 2.5s linear infinite forwards;
+  animation-delay: 0.6s;
+}
+.four {
+  background-color: rgba(190, 105, 105, 0.459);
+  animation: animate 2.5s linear infinite forwards;
+  animation-delay: 0.4s;
+}
+.five {
+  background-color: pink;
+  animation: animate 2.5s linear infinite forwards;
+  animation-delay: 0.2s;
+}
+.six {
+  background-color: rgb(241, 141, 241);
+  animation: animate 2.5s linear infinite forwards;
+  animation-delay: 0.4s;
+}
+.seven {
+  background-color: rgb(141, 245, 236);
+  animation: animate 2.5s linear infinite forwards;
+  animation-delay: 0.4s;
+}
+.eight {
+  background-color: rgb(238, 153, 238);
+  animation: animate 2.5s linear infinite forwards;
+  animation-delay: 0.4s;
+}
+.nine {
+  background-color: rgb(187, 230, 203);
+  animation: animate 2.5s linear infinite forwards;
+  animation-delay: 0.4s;
+}
+@keyframes animate {
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dot:hover {
+  transform: rotateY(180deg) rotateX(10deg);
+  transition: 0.8s;
+}
 // .c-wrap {
 //   position: absolute;
 
@@ -1158,15 +1241,21 @@ nav {
   .swiper-portfolio-icon {
     font-size: 1rem;
   }
-
-  .effect-2 {
-    display: none;
-  }
 }
 
 // Medium Device
 
 @media screen and (min-width: 568px) {
+  .container-dot {
+    position: relative;
+    width: 15%;
+    left: 4rem;
+    top: 42em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  }
+
   .c-wrap {
     position: absolute;
 
@@ -1288,6 +1377,17 @@ nav {
     margin-left: 3rem;
   }
 
+  //--dot animaton---//
+  .container-dot {
+    position: relative;
+    width: 10%;
+    left: 6rem;
+    top: 42em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  }
+
   .about_contianer {
     column-gap: 5rem;
   }
@@ -1333,15 +1433,15 @@ nav {
     }
   }
 
-  .effect-2 {
-    display: block;
-    position: absolute;
-    font-size: 4rem;
-    right: 15rem;
+  // .effect-2 {
+  //   display: block;
+  //   position: absolute;
+  //   font-size: 4rem;
+  //   right: 15rem;
 
-    color: orange;
-    animation: rotate 3s linear infinite;
-  }
+  //   color: orange;
+  //   animation: rotate 3s linear infinite;
+  // }
 
   .qualification_tabs {
     justify-content: center;
@@ -1436,6 +1536,16 @@ nav {
   .main,
   .footer_container {
     padding: 0;
+  }
+
+  .container-dot {
+    position: relative;
+    width: 9%;
+    left: 13rem;
+    top: 43em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   }
 
   .home_blob {

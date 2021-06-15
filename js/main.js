@@ -203,3 +203,5 @@ const sr = ScrollReveal({
 sr.reveal(".educate", { interval: 500 });
 
 sr.reveal(".home_social", { interval: 500 });
+
+sr.reveal(".services_title", {});

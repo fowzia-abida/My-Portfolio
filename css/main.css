@@ -429,6 +429,139 @@ nav {
   font-size: 1.25rem;
 }
 
+.container-dot {
+  position: relative;
+  width: 20%;
+  left: 15rem;
+  top: 42em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.one {
+  background-color: #6ac6d6;
+  -webkit-animation: animate 2.5s linear infinite forwards;
+          animation: animate 2.5s linear infinite forwards;
+  -webkit-animation-delay: 0.2;
+          animation-delay: 0.2;
+}
+
+.two {
+  background-color: aqua;
+  -webkit-animation: animate 2.5s linear infinite forwards;
+          animation: animate 2.5s linear infinite forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.three {
+  background-color: #0ffafa;
+  -webkit-animation: animate 2.5s linear infinite forwards;
+          animation: animate 2.5s linear infinite forwards;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.four {
+  background-color: rgba(190, 105, 105, 0.459);
+  -webkit-animation: animate 2.5s linear infinite forwards;
+          animation: animate 2.5s linear infinite forwards;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.five {
+  background-color: pink;
+  -webkit-animation: animate 2.5s linear infinite forwards;
+          animation: animate 2.5s linear infinite forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.six {
+  background-color: #f18df1;
+  -webkit-animation: animate 2.5s linear infinite forwards;
+          animation: animate 2.5s linear infinite forwards;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.seven {
+  background-color: #8df5ec;
+  -webkit-animation: animate 2.5s linear infinite forwards;
+          animation: animate 2.5s linear infinite forwards;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.eight {
+  background-color: #ee99ee;
+  -webkit-animation: animate 2.5s linear infinite forwards;
+          animation: animate 2.5s linear infinite forwards;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.nine {
+  background-color: #bbe6cb;
+  -webkit-animation: animate 2.5s linear infinite forwards;
+          animation: animate 2.5s linear infinite forwards;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes animate {
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dot:hover {
+  -webkit-transform: rotateY(180deg) rotateX(10deg);
+          transform: rotateY(180deg) rotateX(10deg);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
 .about_container {
   display: -ms-grid;
   display: grid;
@@ -1195,12 +1328,20 @@ nav {
   .swiper-portfolio-icon {
     font-size: 1rem;
   }
-  .effect-2 {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 568px) {
+  .container-dot {
+    position: relative;
+    width: 15%;
+    left: 4rem;
+    top: 42em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  }
   .c-wrap {
     position: absolute;
     left: -10rem;
@@ -1316,6 +1457,17 @@ nav {
   .home_scroll-btn {
     margin-left: 3rem;
   }
+  .container-dot {
+    position: relative;
+    width: 10%;
+    left: 6rem;
+    top: 42em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  }
   .about_contianer {
     -webkit-column-gap: 5rem;
             column-gap: 5rem;
@@ -1382,15 +1534,6 @@ nav {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
     }
-  }
-  .effect-2 {
-    display: block;
-    position: absolute;
-    font-size: 4rem;
-    right: 15rem;
-    color: orange;
-    -webkit-animation: rotate 3s linear infinite;
-            animation: rotate 3s linear infinite;
   }
   .qualification_tabs {
     -webkit-box-pack: center;
@@ -1483,6 +1626,17 @@ nav {
   .main,
   .footer_container {
     padding: 0;
+  }
+  .container-dot {
+    position: relative;
+    width: 9%;
+    left: 13rem;
+    top: 43em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   }
   .home_blob {
     width: 350px;
